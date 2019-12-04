@@ -6,7 +6,7 @@ import styles from './style.scss';
 
 const cx = classnames.bind(styles)
 
-class Card extends React.Component {
+class Gamepage extends React.Component {
 
   render() {
 
@@ -29,4 +29,4 @@ class Card extends React.Component {
   }
 }
 
-export default Card;
+export default Gamepage;

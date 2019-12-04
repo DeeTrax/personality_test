@@ -4,11 +4,8 @@ import classnames from 'classnames';
 import styles from './style.scss';
 const cx = classnames.bind(styles)
 
-
-import Testpage from './components/testpage/testpage';
+import Gamepage from './components/gamepage/gamepage';
 import Result from './components/result/result';
-
-
 
 // ========================================================================
 // Component starts here
@@ -20,12 +17,10 @@ class App extends React.Component {
 
     this.state = {
       clicked:false,
-      // isHidden: false,
-      hideTestPage: false,
+      isHidden: false,
+      hideGamePage: false,
       hideResultBtn: true,
       buttonCounter: 0,
-      // hideResult: true,
-      // isResult: false,
       
       card: [
           {
@@ -98,6 +93,7 @@ class App extends React.Component {
     };
 
   }
+
   showAns(){
     let totalScore = this.state.score.reduce((a,c) => a+c)
     this.setState({isHidden: !this.state.isHidden, totalScore: totalScore});
@@ -140,9 +136,6 @@ class App extends React.Component {
     // save answer in current question . selectedAnswer
   }
 
-  // overviewFunction(e) {
-
-  // }
   hideAnimal() {
     window.location.reload()
   }
@@ -159,10 +152,11 @@ class App extends React.Component {
 // ========================================================================
   render() {
 
+    // calling cx sets all the styles on the element in the display variable
     const showBtn = cx(
-      styles.results,
-      {
-        [styles.hide]: this.state.hideResultBtn
+      styles.results, // styles that never change
+      { // dynamic styles
+        [styles.hide]: this.state.hideResultBtn // make the key the style name, and the value the dynamic boolean
       }
     )
 
@@ -188,37 +182,34 @@ class App extends React.Component {
     )
     
     const hideContent = cx(
-      // styles.overview,
+      styles.overview,
       {
         [styles.hide]: this.state.isHidden
       } 
     )
 
-    // calling cx sets all the styles on the element in the display variable
     const display = cx(
-      styles.myclass, // styles that never change
-      { // dynamic styles
-        [styles.clicked]: this.state.clicked // make the key the style name, and the value the dynamic boolean
+      styles.myclass, 
+      { 
+        [styles.clicked]: this.state.clicked 
       }
     )
 
     const rightBtn = cx(
-      styles.button, // styles that never change
-      { // dynamic styles
-        [styles.disappear]: this.state.last // make the key the style name, and the value the dynamic boolean
+      styles.button, 
+      { 
+        [styles.disappear]: this.state.last 
       }
     )
 
     const leftBtn = cx(
-      styles.button, // styles that never change
-      { // dynamic styles
-        [styles.disappear]: this.state.first // make the key the style name, and the value the dynamic boolean
+      styles.button, 
+      { 
+        [styles.disappear]: this.state.first 
       }
     )
 
     
-
-
     let card;
     let title;
     if (this.state.clicked){
@@ -227,17 +218,6 @@ class App extends React.Component {
     } else {
         card = this.state.card[this.state.counter].question
         title = "Question " + (this.state.counter + 1) + ":"
-    }
-
-
-    let readOnly;
-    let show;
-    if (this.state.card[this.state.counter].message === ""){
-        readOnly = false;
-        show = this.state.userAnswer;
-    } else {
-        readOnly = true;
-        show = this.state.card[this.state.counter].answer
     }
 
     if (this.state.counter === 0 && this.state.first == false ){
@@ -260,7 +240,7 @@ class App extends React.Component {
               <div className="modal-dialog modal-dialog-centered" role="document">
                 <div className="modal-content">
                   <div className="modal-header">
-                    <h5 className="modal-title" id="exampleModalCenterTitle">Stats</h5>
+                    <h5 className="modal-title" id="exampleModalCenterTitle">Current Progession</h5>
                     <button type="button" className="close" data-dismiss="modal" aria-label="Close">
                       <span aria-hidden="true">&times;</span>
                     </button>
@@ -268,7 +248,7 @@ class App extends React.Component {
                   <div className="modal-body text-left">
                     <p><b>Total Questions:</b></p>
                     <p>{this.state.card.length}</p>
-                    <p><b>Your Answer:</b></p>
+                    <p><b>Your Answers:</b></p>
                     <p>{this.state.score}</p>
                   </div>
                 </div>
@@ -288,9 +268,10 @@ class App extends React.Component {
                 <h4>{title}</h4>
                 <h3>{card}</h3>
                 <p>{this.state.card[this.state.counter].message}</p>
-                <Testpage getAnswer={(e)=>{this.getAnswer(e)}} card={this.state.card} counter={this.state.counter}/>
+                {/* added the gamepage toggle page */}
+                <Gamepage getAnswer={(e)=>{this.getAnswer(e)}} card={this.state.card} counter={this.state.counter}/>
                 <br/>
-                <button className={showBtn} onClick={()=>{this.showAns()}} disabled={readOnly}>Show Result <i className='bx align-text-bottom' ></i></button>
+                <button className={showBtn} onClick={()=>{this.showAns()}}>Show Result <i className='bx align-text-bottom' ></i></button>
               </div>
             </div>
             <button className={rightBtn} onClick={()=>{this.nextQns()}}><i className='bx bx-chevron-right bx-lg'></i></button>
