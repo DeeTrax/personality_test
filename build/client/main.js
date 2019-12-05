@@ -102,7 +102,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(5);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _App__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(9);
-/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(18);
+/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(13);
 /* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_style_scss__WEBPACK_IMPORTED_MODULE_3__);
 
 
@@ -636,17 +636,308 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_hot_loader__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(10);
 /* harmony import */ var react_hot_loader__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_hot_loader__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _components_form_form__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(12);
-function _typeof(obj) {if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {_typeof = function _typeof(obj) {return typeof obj;};} else {_typeof = function _typeof(obj) {return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;};}return _typeof(obj);}function _classCallCheck(instance, Constructor) {if (!(instance instanceof Constructor)) {throw new TypeError("Cannot call a class as a function");}}function _defineProperties(target, props) {for (var i = 0; i < props.length; i++) {var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);}}function _createClass(Constructor, protoProps, staticProps) {if (protoProps) _defineProperties(Constructor.prototype, protoProps);if (staticProps) _defineProperties(Constructor, staticProps);return Constructor;}function _possibleConstructorReturn(self, call) {if (call && (_typeof(call) === "object" || typeof call === "function")) {return call;}return _assertThisInitialized(self);}function _assertThisInitialized(self) {if (self === void 0) {throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return self;}function _getPrototypeOf(o) {_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {return o.__proto__ || Object.getPrototypeOf(o);};return _getPrototypeOf(o);}function _inherits(subClass, superClass) {if (typeof superClass !== "function" && superClass !== null) {throw new TypeError("Super expression must either be null or a function");}subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } });if (superClass) _setPrototypeOf(subClass, superClass);}function _setPrototypeOf(o, p) {_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {o.__proto__ = p;return o;};return _setPrototypeOf(o, p);}
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(12);
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(13);
+/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_style_scss__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _components_testpage_testpage__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(17);
+/* harmony import */ var _components_result_result__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(20);
+function _typeof(obj) {if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {_typeof = function _typeof(obj) {return typeof obj;};} else {_typeof = function _typeof(obj) {return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;};}return _typeof(obj);}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}function _toConsumableArray(arr) {return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread();}function _nonIterableSpread() {throw new TypeError("Invalid attempt to spread non-iterable instance");}function _iterableToArray(iter) {if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === "[object Arguments]") return Array.from(iter);}function _arrayWithoutHoles(arr) {if (Array.isArray(arr)) {for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) {arr2[i] = arr[i];}return arr2;}}function _classCallCheck(instance, Constructor) {if (!(instance instanceof Constructor)) {throw new TypeError("Cannot call a class as a function");}}function _defineProperties(target, props) {for (var i = 0; i < props.length; i++) {var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);}}function _createClass(Constructor, protoProps, staticProps) {if (protoProps) _defineProperties(Constructor.prototype, protoProps);if (staticProps) _defineProperties(Constructor, staticProps);return Constructor;}function _possibleConstructorReturn(self, call) {if (call && (_typeof(call) === "object" || typeof call === "function")) {return call;}return _assertThisInitialized(self);}function _assertThisInitialized(self) {if (self === void 0) {throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return self;}function _getPrototypeOf(o) {_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {return o.__proto__ || Object.getPrototypeOf(o);};return _getPrototypeOf(o);}function _inherits(subClass, superClass) {if (typeof superClass !== "function" && superClass !== null) {throw new TypeError("Super expression must either be null or a function");}subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } });if (superClass) _setPrototypeOf(subClass, superClass);}function _setPrototypeOf(o, p) {_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {o.__proto__ = p;return o;};return _setPrototypeOf(o, p);}
 
 
-var
 
-App = /*#__PURE__*/function (_React$Component) {_inherits(App, _React$Component);function App() {_classCallCheck(this, App);return _possibleConstructorReturn(this, _getPrototypeOf(App).apply(this, arguments));}_createClass(App, [{ key: "render", value: function render()
+var cx = classnames__WEBPACK_IMPORTED_MODULE_2___default.a.bind(_style_scss__WEBPACK_IMPORTED_MODULE_3___default.a);
+
+
+
+
+
+
+
+// ========================================================================
+// Component starts here
+// ========================================================================
+var App = /*#__PURE__*/function (_React$Component) {_inherits(App, _React$Component);
+
+  function App() {var _this;_classCallCheck(this, App);
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(App).call(this));
+
+    _this.state = {
+      clicked: false,
+      // isHidden: false,
+      hideTestPage: false,
+      hideResultBtn: true,
+      buttonCounter: 0,
+      // hideResult: true,
+      // isResult: false,
+
+      card: [
+      {
+        question: 'What is your favourite natural element?',
+        answer: ['Fire', 'Water', 'Wood', 'Air'],
+        message: "",
+        selectedAnswer: "" },
+
+      {
+        question: 'I feel at peace with myself most of the time.',
+        answer: ['Very Accurate', 'Fairly Accurate', 'Somewhat Inaccurate', 'Very Inaccurate'],
+        message: "",
+        selectedAnswer: "" },
+
+      {
+        question: 'I find it easy to approach others.',
+        answer: ['Oh Yes!', 'Depends on my mood', 'Challenging', 'Leave me alone'],
+        message: "",
+        selectedAnswer: "" },
+
+      {
+        question: 'I frequently do things without a specific schedule or plan.',
+        answer: ['Yolo', 'Most of the time', 'Sometimes', 'No plan, no future'],
+        message: "",
+        selectedAnswer: "" },
+
+      {
+        question: 'The more I can be of help to others, the happier I am.',
+        answer: ['I love it!', 'Humans cannot survive alone', 'Leave me, hooman', 'Me, myself and I'],
+        message: "",
+        selectedAnswer: "" },
+
+      {
+        question: 'I spent loads of time observing before I act.',
+        answer: ['Still observing', 'Yeah, most of the time', 'Really? Is there a need!?', 'Where got time man?!'],
+        message: "",
+        selectedAnswer: "" },
+
+      {
+        question: 'I am always looking for new things to experience.',
+        answer: ['Fly me to the moon!', 'Within my means', 'Prefer not to unless being force', 'Home alone 5'],
+        message: "",
+        selectedAnswer: "" },
+
+      {
+        question: 'How would you rather spend your free time?',
+        answer: ['Sleep for eternity', 'Spend time with loved ones', 'Be alone and do my thang', 'Exploring new options'],
+        message: "",
+        selectedAnswer: "" },
+
+      {
+        question: 'I require lots of time alone to recharge.',
+        answer: ['Recharging in progress..', '30mins a day keeps me recharged all day', 'Weekends are my recharge window', 'Recharge!? I am the Energizer'],
+        message: "",
+        selectedAnswer: "" },
+
+      {
+        question: 'You rarely worry if you made a good impression on someone you met.',
+        answer: ['Hit me baby one time!', 'Omg! Is my hair on point?!', 'It depends..', 'Nah, It is not as important as my game!'],
+        message: "",
+        selectedAnswer: "" }],
+
+
+      score: Array(10).fill(1),
+      totalScore: 0,
+      counter: 0,
+      userAnswer: "",
+      first: false,
+      last: false };return _this;
+
+
+  }_createClass(App, [{ key: "showAns", value: function showAns()
     {
+      var totalScore = this.state.score.reduce(function (a, c) {return a + c;});
+      this.setState({ isHidden: !this.state.isHidden, totalScore: totalScore });
+    } }, { key: "prevQns", value: function prevQns()
+
+    {
+      this.setState({ clicked: false });
+      if (this.state.counter > 0) {
+        this.setState({ counter: this.state.counter - 1 });
+      };
+      if (this.state.userAnswer !== "") {
+        this.setState({ userAnswer: "" });
+      };
+    } }, { key: "nextQns", value: function nextQns()
+
+    {
+      this.setState({ clicked: false });
+      if (this.state.counter < this.state.card.length - 1) {
+        this.setState({ counter: this.state.counter + 1 });
+      };
+      if (this.state.userAnswer !== "") {
+        this.setState({ userAnswer: "" });
+      };
+
+      if (this.state.counter >= 8) {
+        this.setState({ hideResultBtn: false });
+      }
+    } }, { key: "getAnswer", value: function getAnswer(
+
+    e) {
+      console.log(e.target.value);
+      var value = e.target.value;
+      this.state.card[this.state.counter].selectedAnswer = value;
+      this.setState({ card: this.state.card });
+
+      this.checkPoints(value);
+      console.log(this.state);
+      // what is the current question
+      // get the answer that the user selected
+      // save answer in current question . selectedAnswer
+    }
+
+    // overviewFunction(e) {
+
+    // }
+  }, { key: "hideAnimal", value: function hideAnimal() {
+      window.location.reload();
+    } }, { key: "checkPoints", value: function checkPoints(
+    answer) {var _this$state =
+      this.state,card = _this$state.card,counter = _this$state.counter;
+      var questionScore = card[counter].answer.indexOf(answer) + 1;
+      var score = _toConsumableArray(this.state.score);
+      score[counter] = questionScore;
+      this.setState({ score: score });
+    }
+
+    // ========================================================================
+    // Render Page starts here
+    // ========================================================================
+  }, { key: "render", value: function render() {var _this2 = this;
+
+      var showBtn = cx(
+      _style_scss__WEBPACK_IMPORTED_MODULE_3___default.a.results, _defineProperty({},
+
+      _style_scss__WEBPACK_IMPORTED_MODULE_3___default.a.hide, this.state.hideResultBtn));
+
+
+
+      var hideRefresh = cx(
+      _style_scss__WEBPACK_IMPORTED_MODULE_3___default.a.refresh, _defineProperty({},
+
+      _style_scss__WEBPACK_IMPORTED_MODULE_3___default.a.hide, this.state.isHidden));
+
+
+
+      var hideMain = cx(
+      _style_scss__WEBPACK_IMPORTED_MODULE_3___default.a.main, _defineProperty({},
+
+      _style_scss__WEBPACK_IMPORTED_MODULE_3___default.a.hide, this.state.isHidden));
+
+
+
+      var hideOverview = cx(
+      _style_scss__WEBPACK_IMPORTED_MODULE_3___default.a.overview, _defineProperty({},
+
+      _style_scss__WEBPACK_IMPORTED_MODULE_3___default.a.hide, this.state.isHidden));
+
+
+
+      var hideContent = cx(
+      // styles.overview,
+      _defineProperty({},
+      _style_scss__WEBPACK_IMPORTED_MODULE_3___default.a.hide, this.state.isHidden));
+
+
+
+      // calling cx sets all the styles on the element in the display variable
+      var display = cx(
+      _style_scss__WEBPACK_IMPORTED_MODULE_3___default.a.myclass, // styles that never change
+      _defineProperty({},
+      _style_scss__WEBPACK_IMPORTED_MODULE_3___default.a.clicked, this.state.clicked));
+
+
+
+      var rightBtn = cx(
+      _style_scss__WEBPACK_IMPORTED_MODULE_3___default.a.button, // styles that never change
+      _defineProperty({},
+      _style_scss__WEBPACK_IMPORTED_MODULE_3___default.a.disappear, this.state.last));
+
+
+
+      var leftBtn = cx(
+      _style_scss__WEBPACK_IMPORTED_MODULE_3___default.a.button, // styles that never change
+      _defineProperty({},
+      _style_scss__WEBPACK_IMPORTED_MODULE_3___default.a.disappear, this.state.first));
+
+
+
+
+
+
+      var card;
+      var title;
+      if (this.state.clicked) {
+        card = this.state.card[this.state.counter].answer;
+        title = "Answer " + (this.state.counter + 1) + ":";
+      } else {
+        card = this.state.card[this.state.counter].question;
+        title = "Question " + (this.state.counter + 1) + ":";
+      }
+
+
+      var readOnly;
+      var show;
+      if (this.state.card[this.state.counter].message === "") {
+        readOnly = false;
+        show = this.state.userAnswer;
+      } else {
+        readOnly = true;
+        show = this.state.card[this.state.counter].answer;
+      }
+
+      if (this.state.counter === 0 && this.state.first == false) {
+        this.setState({ first: true });
+      } else if (this.state.counter > 0 && this.state.first == true) {
+        this.setState({ first: false });
+      }
+
+      if (this.state.counter === this.state.card.length - 1 && this.state.last == false) {
+        this.setState({ last: true });
+      } else if (this.state.counter < this.state.card.length - 1 && this.state.last == true) {
+        this.setState({ last: false });
+      }
+
       return (
         react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null,
-        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_form_form__WEBPACK_IMPORTED_MODULE_2__["default"], null), "Welcome."));
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: hideOverview },
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", { type: "button", className: _style_scss__WEBPACK_IMPORTED_MODULE_3___default.a.stats, "data-toggle": "modal", "data-target": "#exampleModalCenter" }, "Overview"),
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: "modal fade", id: "exampleModalCenter", tabIndex: "-1", role: "dialog", "aria-labelledby": "exampleModalCenterTitle", "aria-hidden": "true" },
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: "modal-dialog modal-dialog-centered", role: "document" },
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: "modal-content" },
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: "modal-header" },
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", { className: "modal-title", id: "exampleModalCenterTitle" }, "Stats"),
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", { type: "button", className: "close", "data-dismiss": "modal", "aria-label": "Close" },
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", { "aria-hidden": "true" }, "\xD7"))),
+
+
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: "modal-body text-left" },
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", null, "Total Questions:")),
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, this.state.card.length),
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", null, "Your Answer:")),
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, this.state.score)))))),
+
+
+
+
+
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: hideRefresh },
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", { className: _style_scss__WEBPACK_IMPORTED_MODULE_3___default.a.restart, onClick: function onClick() {window.location.reload();} }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", { className: "bx bx-repost bx-md align-bottom" }))),
+
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: hideMain },
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", { className: leftBtn, onClick: function onClick() {_this2.prevQns();} }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", { className: "bx bx-chevron-left bx-lg" })),
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: display },
+
+        this.state.isHidden === true ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_result_result__WEBPACK_IMPORTED_MODULE_5__["default"], { hideanimal: function hideanimal() {return _this2.hideAnimal();}, getAnswer: function getAnswer(e) {_this2.getAnswer(e);}, card: this.state.card, counter: this.state.counter, totalScore: this.state.totalScore }) :
+        "",
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: hideContent },
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, title),
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, card),
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, this.state.card[this.state.counter].message),
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_testpage_testpage__WEBPACK_IMPORTED_MODULE_4__["default"], { getAnswer: function getAnswer(e) {_this2.getAnswer(e);}, card: this.state.card, counter: this.state.counter }),
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null),
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", { className: showBtn, onClick: function onClick() {_this2.showAns();}, disabled: readOnly }, "Show Result ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", { className: "bx align-text-bottom" })))),
+
+
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", { className: rightBtn, onClick: function onClick() {_this2.nextQns();} }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", { className: "bx bx-chevron-right bx-lg" })))));
 
 
 
@@ -677,63 +968,6 @@ function _interopDefault(e){return e&&"object"==typeof e&&"default"in e?e.defaul
 
 /***/ }),
 /* 12 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(13);
-/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(14);
-/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_style_scss__WEBPACK_IMPORTED_MODULE_2__);
-function _typeof(obj) {if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {_typeof = function _typeof(obj) {return typeof obj;};} else {_typeof = function _typeof(obj) {return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;};}return _typeof(obj);}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}function _classCallCheck(instance, Constructor) {if (!(instance instanceof Constructor)) {throw new TypeError("Cannot call a class as a function");}}function _defineProperties(target, props) {for (var i = 0; i < props.length; i++) {var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);}}function _createClass(Constructor, protoProps, staticProps) {if (protoProps) _defineProperties(Constructor.prototype, protoProps);if (staticProps) _defineProperties(Constructor, staticProps);return Constructor;}function _possibleConstructorReturn(self, call) {if (call && (_typeof(call) === "object" || typeof call === "function")) {return call;}return _assertThisInitialized(self);}function _assertThisInitialized(self) {if (self === void 0) {throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return self;}function _getPrototypeOf(o) {_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {return o.__proto__ || Object.getPrototypeOf(o);};return _getPrototypeOf(o);}function _inherits(subClass, superClass) {if (typeof superClass !== "function" && superClass !== null) {throw new TypeError("Super expression must either be null or a function");}subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } });if (superClass) _setPrototypeOf(subClass, superClass);}function _setPrototypeOf(o, p) {_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {o.__proto__ = p;return o;};return _setPrototypeOf(o, p);}
-
-
-
-
-
-var cx = classnames__WEBPACK_IMPORTED_MODULE_1___default.a.bind(_style_scss__WEBPACK_IMPORTED_MODULE_2___default.a);var
-
-Form = /*#__PURE__*/function (_React$Component) {_inherits(Form, _React$Component);
-
-  function Form() {var _this;_classCallCheck(this, Form);
-    _this = _possibleConstructorReturn(this, _getPrototypeOf(Form).call(this));
-
-    _this.state = {
-      clicked: false };return _this;
-
-  }_createClass(Form, [{ key: "clickHandler", value: function clickHandler()
-
-    {
-
-      this.setState({ clicked: !this.state.clicked });
-    } }, { key: "render", value: function render()
-
-    {var _this2 = this;
-
-      // calling cx sets all the styles on the element in the display variable
-      var display = cx(
-      _style_scss__WEBPACK_IMPORTED_MODULE_2___default.a.myclass, // styles that never change
-      _defineProperty({},
-      _style_scss__WEBPACK_IMPORTED_MODULE_2___default.a.clicked, this.state.clicked));
-
-
-
-      return (
-        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null,
-        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", { className: display }, "yay"),
-        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", { onClick: function onClick() {_this2.clickHandler();} }, "click to change"),
-        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", { className: _style_scss__WEBPACK_IMPORTED_MODULE_2___default.a.name })));
-
-
-    } }]);return Form;}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
-
-
-/* harmony default export */ __webpack_exports__["default"] = (Form);
-
-/***/ }),
-/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -790,20 +1024,135 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
 
 
 /***/ }),
-/* 14 */
+/* 13 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-module.exports = {"name":"_3FCC1ioDeTLyU-q7GE-XMA","myclass":"_3pf_BLV89Zzkhn34IcOz0k","clicked":"ZSk26cwv8rJOJ5Ue4qfLj"};
+module.exports = {"myclass":"_1WPxL4v83MM1Qs6cgXw4Il","clicked":"_3niMejecdgDdoyKVgB1WDx","stats":"_2vK1lPC3IKBVmhKs_ePKG6","restart":"_2xB3qP3l03QJcaAiN6aD7C","refresh":"_2x75U7AgXiNoNBY9s2jYS5","overview":"_1yu4s_E1rqMre4YC28lO7h","hideContent":"_17bqbuLwu2uN88L5CqXefo","hide":"c4l36rdEFcJa6eew3_Li8","main":"bo1tQRAeb0GbwCwEYetwr","button":"_3iPB0T0TLd4rTFiHyvGQgp","results":"_38R0WYqCjcPa1DOzI4Y02x","dunno":"_3V6T026-gZku_X9P_hdjaG","below":"_28IIOg9wLNZobZAFfi4bG0","disappear":"_1wet3rXLEXvE3txzzKz2MY","center":"_3cE3VbzT7Y2Zre73RR0t98"};
 
 /***/ }),
+/* 14 */,
 /* 15 */,
 /* 16 */,
-/* 17 */,
+/* 17 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(12);
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(18);
+/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_style_scss__WEBPACK_IMPORTED_MODULE_2__);
+function _typeof(obj) {if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {_typeof = function _typeof(obj) {return typeof obj;};} else {_typeof = function _typeof(obj) {return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;};}return _typeof(obj);}function _classCallCheck(instance, Constructor) {if (!(instance instanceof Constructor)) {throw new TypeError("Cannot call a class as a function");}}function _defineProperties(target, props) {for (var i = 0; i < props.length; i++) {var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);}}function _createClass(Constructor, protoProps, staticProps) {if (protoProps) _defineProperties(Constructor.prototype, protoProps);if (staticProps) _defineProperties(Constructor, staticProps);return Constructor;}function _possibleConstructorReturn(self, call) {if (call && (_typeof(call) === "object" || typeof call === "function")) {return call;}return _assertThisInitialized(self);}function _assertThisInitialized(self) {if (self === void 0) {throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return self;}function _getPrototypeOf(o) {_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {return o.__proto__ || Object.getPrototypeOf(o);};return _getPrototypeOf(o);}function _inherits(subClass, superClass) {if (typeof superClass !== "function" && superClass !== null) {throw new TypeError("Super expression must either be null or a function");}subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } });if (superClass) _setPrototypeOf(subClass, superClass);}function _setPrototypeOf(o, p) {_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {o.__proto__ = p;return o;};return _setPrototypeOf(o, p);}
+
+
+
+
+
+var cx = classnames__WEBPACK_IMPORTED_MODULE_1___default.a.bind(_style_scss__WEBPACK_IMPORTED_MODULE_2___default.a);var
+
+Card = /*#__PURE__*/function (_React$Component) {_inherits(Card, _React$Component);function Card() {_classCallCheck(this, Card);return _possibleConstructorReturn(this, _getPrototypeOf(Card).apply(this, arguments));}_createClass(Card, [{ key: "render", value: function render()
+
+    {var _this$props =
+
+      this.props,card = _this$props.card,counter = _this$props.counter,getAnswer = _this$props.getAnswer;
+      var answer = card[counter].answer.map(function (item, index) {
+        return (
+          react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", { key: index }, item));
+
+      });
+      return (
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", null,
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { "class": "form-group" },
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", { "for": "exampleFormControlSelect1" }, "Choose Your Best Answer"),
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("select", { onChange: getAnswer, "class": "form-control", id: "exampleFormControlSelect1" },
+        answer))));
+
+
+
+
+    } }]);return Card;}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
+
+
+/* harmony default export */ __webpack_exports__["default"] = (Card);
+
+/***/ }),
 /* 18 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
+module.exports = {"name":"-q2VHLMtV94QZHY9Nmg4U"};
+
+/***/ }),
+/* 19 */,
+/* 20 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+function _typeof(obj) {if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {_typeof = function _typeof(obj) {return typeof obj;};} else {_typeof = function _typeof(obj) {return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;};}return _typeof(obj);}function _classCallCheck(instance, Constructor) {if (!(instance instanceof Constructor)) {throw new TypeError("Cannot call a class as a function");}}function _defineProperties(target, props) {for (var i = 0; i < props.length; i++) {var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);}}function _createClass(Constructor, protoProps, staticProps) {if (protoProps) _defineProperties(Constructor.prototype, protoProps);if (staticProps) _defineProperties(Constructor, staticProps);return Constructor;}function _possibleConstructorReturn(self, call) {if (call && (_typeof(call) === "object" || typeof call === "function")) {return call;}return _assertThisInitialized(self);}function _assertThisInitialized(self) {if (self === void 0) {throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return self;}function _getPrototypeOf(o) {_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {return o.__proto__ || Object.getPrototypeOf(o);};return _getPrototypeOf(o);}function _inherits(subClass, superClass) {if (typeof superClass !== "function" && superClass !== null) {throw new TypeError("Super expression must either be null or a function");}subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } });if (superClass) _setPrototypeOf(subClass, superClass);}function _setPrototypeOf(o, p) {_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {o.__proto__ = p;return o;};return _setPrototypeOf(o, p);}var
+
+Results = /*#__PURE__*/function (_React$Component) {_inherits(Results, _React$Component);function Results() {_classCallCheck(this, Results);return _possibleConstructorReturn(this, _getPrototypeOf(Results).apply(this, arguments));}_createClass(Results, [{ key: "render", value: function render()
+
+    {var _this = this;
+
+
+      var animalDescription;
+
+      if (this.props.totalScore < 11) {
+        animalDescription = "Flappy Eagle is a powerful animal, the Flappy Eagle is most frequently associated with wisdom and freedom. Flappy Eagle people are seen as visionaries, those who are seekers and who are willing to push the limits of self-discovery and personal freedom.";
+
+      } else if (this.props.totalScore > 10 && this.props.totalScore < 20) {
+        animalDescription = "Kisses Bear is emblematic of grounding forces and strength. This animal has been worshiped throughout time as a powerful totem, inspiring those who need it the courage to stand up against adversity. It provides us with strength in times when we feel weak or helpless and asks us to accept an authoritative role, not only directing our own lives but guiding others.";
+
+      } else if (this.props.totalScore > 19 && this.props.totalScore < 30) {
+        animalDescription = "Dancing Panda is an unique animal inspiring tranquil strength and determination. It also encompasses personal and spiritual qualities, such as integration of polarized aspects of yourself, such as feminine and masculine energies";
+
+      } else if (this.props.totalScore > 29) {
+        animalDescription = "Playful Monkey has a strong capacity for compassion, understanding, and bonding. All of which is part of our human social makeup as well, and they serve to remind us that our journey on this planet is not a solitary one. When it comes to solving problems this creature knows how to use their ingenuity and resourcefulness to solve problems.";
+      }
+
+      var image = null;
+      if (this.props.totalScore < 11) {
+        // eagle animal
+        image = "https://cdn.dribbble.com/users/375867/screenshots/1454990/eagle-flying-spritesheet-sidescroller-game-assets.gif";
+
+      } else if (this.props.totalScore > 10 && this.props.totalScore < 20) {
+        // bear animal
+        image = "https://media1.tenor.com/images/c1b2cb88bc3cf44b10735cab46360c95/tenor.gif?itemid=13055170";
+
+      } else if (this.props.totalScore > 19 && this.props.totalScore < 30) {
+        // panda animal
+        image = "https://thumbs.gfycat.com/AncientNaiveArizonaalligatorlizard-max-1mb.gif";
+
+      } else if (this.props.totalScore > 29) {
+        // monkey animal
+        image = "https://media.tenor.com/images/83b12e358530ef103af3a9493b9ba621/tenor.gif";
+      }
+
+
+      return (
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null,
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Your Personality Game Result is: "),
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, this.props.totalScore),
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, animalDescription),
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", { src: image, alt: "animal images", className: "img-fluid" }),
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: "d-flex justify-content-between mt-3" },
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", { onClick: function onClick(e) {return _this.props.hideanimal(e);}, classname: "restartgame", type: "button", "class": "btn btn-primary btn-lg" }, "Restart Game"),
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("script", { type: "text/javascript" }, " "),
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", { onClick: function onClick() {return window.print();}, value: "Print", type: "button", "class": "btn btn-success btn-lg" }, "Screenshot"))));
+
+
+
+
+    } }]);return Results;}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
+
+
+/* harmony default export */ __webpack_exports__["default"] = (Results);
 
 /***/ })
 /******/ ]);
