@@ -47,6 +47,7 @@ if( process.env.NODE_ENV === 'development' ){
 
   // all other requests be handled by UI itself
 }else{
+
   clientBuildPath = resolve(__dirname, 'build', 'client');
   
   app.use('/', express.static(clientBuildPath));
